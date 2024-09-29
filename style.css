@@ -1,7 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+
+
+
 body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(220, 223, 223);
     margin: 0;
     padding: 0;
-    background-color: rgb(201, 202, 202)
+}
+
+p{
+    color: rgb(153,153,153);
+    font-size: small;
 }
 
 nav{
@@ -18,18 +31,20 @@ nav{
 
 .nav_content{
     display: flex;
-    color: rgb(82, 66, 128);
+    color: rgb(97, 88, 122);
 }
 
 .leaf_icon{
     height: 30px;
     width: 30px;
     align-self: center;
+    fill:rgb(124, 107, 170); 
     
 }
 .icon{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
+    fill: rgb(53,53,53);
 }
 
 /* Section Part */
@@ -40,6 +55,9 @@ section{
     padding-right: 10rem;
 }
 
+button{
+    padding: 0.5rem 1rem;
+}
 
 .btn_container{
     display: flex;
@@ -47,12 +65,21 @@ section{
 
 }
 
+.create_btn{
+    background-color:rgb(124, 107, 170);
+    border: none;
+    color: white;
+    
+}
+
+.all_btn{
+    color:rgb(124, 107, 170);
+}
+
+/* make column repeat 3 times and making 3 equal parts and each part takes size 1fr that means equal size ( such as, 100%/3) */
 .grid_container{
     display: grid;
-    /* row-gap: 20px;
-    column-gap: 230px; */
-    grid-template-columns: repeat(3,1fr);
-    /* gap: 2rem ; */
+    grid-template-columns: repeat(3,1fr);  
     column-gap: 3rem;
     row-gap: 1rem;
     padding-top: 1rem;
@@ -60,16 +87,33 @@ section{
 }
 
 .grid_item{
+    text-align: start;
     background-color: white;
-    height: 100px;
-    width: 100%;
     border: rgb(53,53,53) 0.1rem solid;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem ;
 }
 
+
 textarea{
-    height: 50px;
     width: 100%;
+    border: grey 0.1rem solid;
+    box-sizing: border-box;
+}
+
+.btn{
+
+    background-color: white;
+    border: gray 0.1rem solid;
+    border-radius: 0.1rem;
+}
+.add_btn{
+    margin-top: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.three_icon{
+    display: flex;
+    gap: 2rem;
 }
 
 .load_btn_btn{
@@ -77,8 +121,9 @@ textarea{
    padding: 2rem;
 }
 .load_btn{
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     border-radius: 0.1rem;
+    border: none;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
