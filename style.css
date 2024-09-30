@@ -7,7 +7,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: rgb(220, 223, 223);
+    background-color: #F8F9FE;
     margin: 0;
     padding: 0;
 }
@@ -31,20 +31,20 @@ nav{
 
 .nav_content{
     display: flex;
-    color: rgb(97, 88, 122);
+    color: #8191DE;
 }
 
 .leaf_icon{
     height: 30px;
     width: 30px;
     align-self: center;
-    fill:rgb(124, 107, 170); 
+    fill:#798DF7;
     
 }
 .icon{
     height: 15px;
     width: 15px;
-    fill: rgb(53,53,53);
+    fill: #9BA2AA;
 }
 
 /* Section Part */
@@ -66,14 +66,15 @@ button{
 }
 
 .create_btn{
-    background-color:rgb(124, 107, 170);
+    background-color:#7B8DFA;
     border: none;
     color: white;
+    border-radius: 0.2rem;
     
 }
 
 .all_btn{
-    color:rgb(124, 107, 170);
+    color:#798DF7;
 }
 
 /* make column repeat 3 times and making 3 equal parts and each part takes size 1fr that means equal size ( such as, 100%/3) */
@@ -89,21 +90,21 @@ button{
 .grid_item{
     text-align: start;
     background-color: white;
-    border: rgb(53,53,53) 0.1rem solid;
+    border: #EFF0F4 0.1rem solid;
     padding: 0.5rem 1rem ;
 }
 
 
 textarea{
     width: 100%;
-    border: grey 0.1rem solid;
+    border: #DFE0F1 0.1rem solid;
     box-sizing: border-box;
 }
 
 .btn{
 
     background-color: white;
-    border: gray 0.1rem solid;
+    border: #EFF1F2 0.1rem solid;
     border-radius: 0.1rem;
 }
 .add_btn{
@@ -121,7 +122,7 @@ textarea{
    padding: 2rem;
 }
 .load_btn{
-    background-color: rgb(27, 27, 27);
+    background-color: #1B1B1B;
     border-radius: 0.1rem;
     border: none;
     color: white;
