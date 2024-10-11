@@ -2,41 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     background-color: #F8F9FE;
-    margin: 0;
-    padding: 0;
+    
 }
 
 p{
     color: rgb(153,153,153);
-    font-size: small;
+    
 }
 
-nav{
+.nav{
     display: flex;
-    height: fit-content;
     background-color: white;
-    border-color: grey;
-    box-shadow: 2rem;
+    border: .06rem solid #dde2ff;;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 1rem 2rem;
 }
 
 .nav_content{
     display: flex;
     color: #8191DE;
+    gap: .75rem;
+}
+.todo_text{
+    font-size: 2.25rem;
+    line-height: 2.63rem;
 }
 
 .leaf_icon{
-    height: 30px;
-    width: 30px;
+    height: 34px;
+    width: 34px;
     align-self: center;
     fill:#798DF7;
     
@@ -44,87 +48,142 @@ nav{
 .icon{
     height: 15px;
     width: 15px;
+    fill: #484b4e;
+}
+.search_icon{
+    height: 24px;
+    width: 24px;
     fill: #9BA2AA;
 }
 
 /* Section Part */
 
 
-section{
-    padding-left: 10rem;
-    padding-right: 10rem;
+.section{
+    padding: 3rem 2rem 1rem;
 }
 
-button{
-    padding: 0.5rem 1rem;
+.btn{
+    align-items: center;
+    border: .06rem solid #dde2ff;
+    border-radius: .31rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: .5rem;
+    line-height: 1.17rem;
+    padding: 0.56rem 1.25rem;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
 }
 
 .btn_container{
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+    gap: .75rem;
+    margin-top: 1.75rem;
+    flex-wrap: wrap;
 
 }
 
-.create_btn{
-    background-color:#7B8DFA;
-    border: none;
-    color: white;
-    border-radius: 0.2rem;
+.plus_icon{
+    height: 1.5rem;
+    width: 1.5rem;
     
 }
 
+.create_btn{
+    display: flex;
+    justify-content: space-between;
+    background-color:#7B8DFA;
+    border: none;
+    color: white;
+    
+}
+
+.three_btn{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: .75rem;
+    flex-wrap: wrap;
+}
 .all_btn{
     color:#798DF7;
 }
 
+
+ /* Card section */
 /* make column repeat 3 times and making 3 equal parts and each part takes size 1fr that means equal size ( such as, 100%/3) */
-.grid_container{
+.card_container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);  
-    column-gap: 3rem;
-    row-gap: 1rem;
-    padding-top: 1rem;
+    grid-template-columns: repeat(3,1fr); 
+    gap:3rem; 
+    /* padding-top: 1rem; */
+    /* margin-top: 2.12rem; */
     
 }
 
-.grid_item{
-    text-align: start;
+.card_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border: .06rem solid #dde2ff;
+    border-radius: .31rem;
+    gap: 2rem;
+    /* text-align: start;
     background-color: white;
     border: #EFF0F4 0.1rem solid;
-    padding: 0.5rem 1rem ;
+    padding: 0.5rem 1rem ; */
 }
 
+.card_header{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
 
 textarea{
     width: 100%;
+    height: 100%;
     border: #DFE0F1 0.1rem solid;
     box-sizing: border-box;
 }
 
-.btn{
+/* .btn{
 
     background-color: white;
     border: #EFF1F2 0.1rem solid;
     border-radius: 0.1rem;
-}
-.add_btn{
+} */
+/* .add_btn{
     margin-top: 1rem;
     padding: 0.2rem 0.5rem;
-}
+} */
 
-.three_icon{
+.card_body{
     display: flex;
     gap: 2rem;
 }
 
 .load_btn_btn{
-   text-align: center;
-   padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .load_btn{
+    border: .06rem solid #dde2ff;
+    border-radius: .31rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.17rem;
+    padding: 0.56rem 1.25rem;
+    cursor: pointer;
     background-color: #1B1B1B;
-    border-radius: 0.1rem;
-    border: none;
     color: white;
-    padding: 0.5rem 1rem;
 }
